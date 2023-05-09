@@ -8,14 +8,14 @@
       height: 500px;
       padding: 3px;
       position: relative;
-      top: 75px;
-      text-align: center;}
+      top: 75px;}
 
 .Img{
       height: 300px;
       width: 300px;
       border: 3px solid #18d26e;
-      border-radius: 50%;}
+      border-radius: 50%;
+      text-align: center ;}
 
 .Title-Sobre-Mi{
       width: 100%;}
@@ -238,10 +238,15 @@
 @media (max-width:510px){
      .Container-Sobre-Mi{
         justify-content: center;}
-
+      .Image{
+            left: -25px;
+      }
      .Parrafo{
          width: 100%;
-         text-align: start;}
+         text-align: start;}      
+
+     .Container-Habilidades{
+            justify-content: start;}
 }
 
 @media (max-width:810px){
