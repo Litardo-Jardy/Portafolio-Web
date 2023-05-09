@@ -1,0 +1,106 @@
+.Nav{
+      display: flex;
+      width: 420px;
+      justify-content: space-between;
+      margin-top: 6px;}
+
+.li-nav{
+      list-style:none;
+      margin-left: -39px;
+      margin-top: 15px;}
+
+.link-nav{
+      text-decoration: none;
+      font-size: 21px;
+      background-color: transparent;
+      color: #fff;
+      font-family: 'IBM Plex Serif', serif;}
+
+.li-nav:hover{
+      border-bottom: 2px solid #18d26e;}
+
+.Nav-Redes{
+      display: flex;
+      width: 420px;
+      justify-content: space-around;
+      margin-top: 6px;}         
+
+.li-redes{
+      list-style:none;
+      margin-left: -39px;
+      margin-top: 15px;
+      width: 80px;
+      height: 80px;
+      text-align: center;
+      background-color:  rgba(255, 255, 255, 0.08);
+      border: rgba(255, 255, 255, 0.08);
+      border-radius: 50%;
+      transition: 0.4s;}
+
+.li-redes:hover{
+      border: 2px solid #18d26e;
+      width: 82px;
+      height: 82px;}
+
+.link-redes{
+      text-decoration: none;
+      display: inline-block;
+      font-size: 21px;
+      background-color: transparent;
+      color: #fff;
+      font-family: 'IBM Plex Serif', serif;
+      margin-top: 20px;}
+
+.arriba{
+      background-color: #18d26e;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      bottom: 50px;
+      right: 30px;
+      cursor: pointer;
+      border: 4px solid transparent;
+      transition: 0.3s ease;}
+
+.arriba:hover{
+      transform: scale(1.1);
+      border-color: rgba(0,0,0,0.1);}
+
+.start{
+      text-decoration: none;
+      color: white;}
+
+@media (max-width:510px){
+      .Nav{
+         margin-top: 15px;
+         flex-direction: column;
+         text-align: center}
+
+      .li-nav{
+         position: relative;
+         top: 110px;
+         padding: 20px;}
+
+      .link-nav{
+         font-size: 21px;
+         position: relative;}
+
+      .Nav-Redes{
+            margin-top: 15px;
+            flex-direction: row; }
+
+      .li-redes{
+            position: relative;
+            top: 110px;
+            padding: 20px; 
+            width: 60px;
+            height: 60px;}
+
+      .link-redes{
+            font-size: 21px;
+            margin-top: 12px;}
+}

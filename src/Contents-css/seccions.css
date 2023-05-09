@@ -1,0 +1,50 @@
+.Seccion_One{
+      color: #fff;     
+      align-items:center;
+      position: absolute;
+      top: 20px;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 600px;}
+
+.h1_seccion{
+      font-size: 45px;
+      font-family: 'IBM Plex Serif', serif;}
+
+.h2_seccion{
+      text-align:center;
+      font-size: 22px;
+      border-bottom: 2px solid #18d26e;
+      width: 280px;
+      margin-top: -14px;
+      font-family: 'Karla', sans-serif;}
+
+ .Seccion_Two{
+      background-color: black;
+      display: flex;
+      flex-wrap: wrap;
+      width: 85%;
+      height: auto;
+      border: 2px solid #212529;
+      border-radius: 10px;
+      margin-top: 750px;
+      padding: 10px;}
+
+@media (max-width:510px){
+      .h1_seccion{
+          text-align: center;
+          width: 250px;
+          font-size: 30px;
+          position: relative;
+          top: 110px;}
+      .Seccion_Two{
+           margin-top: 860px;      
+      }
+      .h2_seccion{
+           font-size: 20px;
+           position: relative;
+           top: 110px;}}
+
+

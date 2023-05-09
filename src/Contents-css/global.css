@@ -1,0 +1,27 @@
+html{
+     box-sizing: border-box;
+     scroll-behavior: smooth;
+}
+             
+body{
+  background-image: url('../Contents/Seccion_One/Image_Background/background4.0.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  image-rendering: pixelated;
+  box-sizing: border-box;}
+
+.Container_One{
+  background-color: #212529;
+  opacity: 0.9;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 2px solid #212529;
+  border-radius: 10px;
+  box-sizing: border-box;}
+
+  @media (max-width:510px){
+    .Container_One{
+    width: 120%;}}
