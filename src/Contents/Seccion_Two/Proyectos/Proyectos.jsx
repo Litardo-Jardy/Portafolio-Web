@@ -2,9 +2,9 @@ import "../seccionTwo.css";
 import BPeliculas1 from './Image_Proyectos/Buscador_peliculas1.jpeg'
 import BPeliculas2 from './Image_Proyectos/Buscador_peliculas2.jpeg'
 
-import Buscador1 from './Image_Proyectos/Buscador_Imagenes_1.jpeg'
-import Buscador2 from './Image_Proyectos/Buscador_Imagenes_2.jpeg'
-import Buscador3 from './Image_Proyectos/Buscador_Imagenes_3.jpeg'
+import Buscador1 from './Image_Proyectos/Libros_1.jpeg'
+import Buscador2 from './Image_Proyectos/Libros_2.jpeg'
+import Buscador3 from './Image_Proyectos/Libros_3.jpeg'
 
 import Camisetas1 from './Image_Proyectos/Camisetas_1.jpeg'
 import Camisetas2 from './Image_Proyectos/Camisetas_2.jpeg'
@@ -30,9 +30,9 @@ const Proyectos = () =>{
              </div>
 
              <ProyectosContainer 
-                      nombre="Buscador de Imagenes "
-                      link_one="https://github.com/Litardo-Jardy/Buscador_de_imagenes"
-                      link_two="https://litardo-jardy.github.io/Buscador_de_imagenes/" />
+                      nombre="LIbreria Online "
+                      link_one="https://github.com/Litardo-Jardy/Libreria-Online"
+                      link_two="https://libreria-online.vercel.app/" />
 
              <div className="Container-Proyects-Two">
                    <img className="Img-Proyects" src={Buscador1} />
