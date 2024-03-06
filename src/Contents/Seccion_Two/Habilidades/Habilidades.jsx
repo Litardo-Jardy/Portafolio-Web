@@ -6,6 +6,7 @@ import { DiReact } from 'react-icons/di';
 import { DiGithubBadge } from 'react-icons/di';
 import { DiPython } from 'react-icons/di';
 import { DiMysql } from 'react-icons/di';
+import { FaPhp } from "react-icons/fa";
 import HabilidadesContainer from "./HabilidadesContainer";
 
 
@@ -22,5 +23,6 @@ const Habilidades = () =>{
                  <HabilidadesContainer icons={<DiGithubBadge size="50px" color="#11dbcf" />} tecnologia="GIT" />
                  <HabilidadesContainer icons={<DiPython size="50px" color="rgb(181, 212, 65)" />} tecnologia="PYTHON" />
                  <HabilidadesContainer icons={<DiMysql size="50px" color="#ffa76e" />} tecnologia="MySql" />
+                 <HabilidadesContainer icons={<FaPhp size="50px" color="#ffa76e" />} tecnologia="PHP" />
             </div> )}
 export default Habilidades;
