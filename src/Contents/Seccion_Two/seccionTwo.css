@@ -8,13 +8,14 @@
       height: 500px;
       padding: 3px;
       position: relative;
+      display: flex;
+      justify-content: center;
       top: 75px;}
 
 .Img{
-      height: 300px;
-      width: 300px;
-      border: 3px solid #18d26e;
-      border-radius: 50%;
+      height: 200px;
+      width: 200px;
+      border-radius: 51%;
       text-align: center ;}
 
 .Title-Sobre-Mi{

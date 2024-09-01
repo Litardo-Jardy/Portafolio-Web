@@ -29,11 +29,11 @@ const Datos = () =>{
                      mi trabajo y mi compromiso con el aprendizaje continuo me han permitido adquirir un sólido conocimiento y habilidades en esta tecnología. 
                      Actualmente, he tenido cierta experiencia realizando mis prácticas pre-profesionales, donde he tenido la oportunidad de sumergirme en el 
                      ambiente laboral. Durante este periodo, he llevado a cabo análisis detallados tanto del código como de la lógica detrás de distintos sistemas. <br />
-<br />
+                    <br />
                     Soy una persona responsable, autodidacta y proactiva, siempre dispuesta a asumir nuevos retos y aprender de mis errores. A pesar de mi corta 
                     experiencia, tengo la capacidad de trabajar de forma independiente y en equipo, y estoy comprometido en proporcionar soluciones de alta calidad
-                   para satisfacer las necesidades del cliente. Estoy enfocado en seguir mejorando y creciendo como desarrollador, para poder ofrecer soluciones 
-                   innovadoras y eficientes a los desafíos tecnológicos actuales. 
+                    para satisfacer las necesidades del cliente. Estoy enfocado en seguir mejorando y creciendo como desarrollador, para poder ofrecer soluciones 
+                    innovadoras y eficientes a los desafíos tecnológicos actuales. 
                      </p>
                    </div>
             

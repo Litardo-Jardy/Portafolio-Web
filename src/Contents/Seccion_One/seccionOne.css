@@ -2,16 +2,18 @@
       display: flex;
       width: 420px;
       justify-content: space-between;
+      position: relative;
+      bottom: 35px;
       margin-top: 6px;}
 
 .li-nav{
       list-style:none;
       margin-left: -39px;
-      margin-top: 15px;}
+      }
 
 .link-nav{
       text-decoration: none;
-      font-size: 21px;
+      font-size: 18px;
       background-color: transparent;
       color: #fff;
       font-family: 'IBM Plex Serif', serif;}
@@ -23,29 +25,24 @@
       display: flex;
       width: 420px;
       justify-content: space-around;
+      position: relative;
+      bottom: 50px;
       margin-top: 6px;}         
 
 .li-redes{
       list-style:none;
       margin-left: -39px;
       margin-top: 15px;
-      width: 80px;
-      height: 80px;
+      width: 50px;
+      height: 50px;
       text-align: center;
-      background-color:  rgba(255, 255, 255, 0.08);
       border: rgba(255, 255, 255, 0.08);
-      border-radius: 50%;
-      transition: 0.4s;}
-
-.li-redes:hover{
-      border: 2px solid #18d26e;
-      width: 82px;
-      height: 82px;}
-
+      border-radius: 50%}
+      
 .link-redes{
       text-decoration: none;
       display: inline-block;
-      font-size: 21px;
+      font-size: 15px;
       background-color: transparent;
       color: #fff;
       font-family: 'IBM Plex Serif', serif;
@@ -53,14 +50,14 @@
 
 .arriba{
       background-color: #18d26e;
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
       position: fixed;
-      bottom: 50px;
+      bottom: 10px;
       right: 30px;
       cursor: pointer;
       border: 4px solid transparent;
@@ -76,31 +73,36 @@
 
 @media (max-width:510px){
       .Nav{
-         margin-top: 15px;
-         flex-direction: column;
+         margin-top: 25px;
+         top: -5px;
+         width: 60%;
+         flex-direction: row;
          text-align: center}
 
       .li-nav{
          position: relative;
-         top: 110px;
-         padding: 20px;}
+         padding: 5px 10px 5px 10px;}
 
       .link-nav{
-         font-size: 21px;
-         position: relative;}
+         font-size: 14px}
 
       .Nav-Redes{
-            margin-top: 15px;
+            top: -10px; 
             flex-direction: row; }
 
       .li-redes{
-            position: relative;
-            top: 110px;
             padding: 20px; 
             width: 60px;
             height: 60px;}
 
       .link-redes{
-            font-size: 21px;
+            font-size: 15px;
             margin-top: 12px;}
+
+      .arriba{
+        width: 30px;
+        height: 30px;
+        bottom: 10px;
+        right: 25px;
+      }
 }
