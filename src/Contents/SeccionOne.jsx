@@ -11,7 +11,9 @@ const SeccionOne = () =>{
                    </div>
                <h1 className="h1_seccion">Tech. Jardy Litardo</h1>
                <h2 className="h2_seccion">Software develoment</h2>
+
                <Navegacion />
                <RedesSociales />
+
             </div>)}
 export default SeccionOne;

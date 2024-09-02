@@ -34,14 +34,13 @@
       top: 75px;}
 
  .Seccion_Two{
-      background-color: black;
       display: flex;
       flex-wrap: wrap;
-      width: 85%;
+      width: 95%;
       height: auto;
       border: 2px solid #212529;
       border-radius: 10px;
-      margin-top: 750px;
+      margin-top: 600px;
       padding: 10px;}
 
 @media (max-width:510px){
