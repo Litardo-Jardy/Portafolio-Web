@@ -1,6 +1,6 @@
 import '../Contents-css/seccions.css';
-import Navegacion from "./Seccion_One/Navegacion.jsx";
-import RedesSociales from "./Seccion_One/RedesSociales";
+import Navegacion from "./Seccion_One/Navegacion.tsx";
+import RedesSociales from "./Seccion_One/RedesSociales.tsx";
 import imagen from './Seccion_Two/SobreMi/Image_SobreMi/PerfilOne.jpeg'
 
 const SeccionOne = () =>{

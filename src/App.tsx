@@ -5,11 +5,9 @@ import Navegacion from './Contents/Seccion_One/Navegacion.jsx'
 
 export const App = () => {
   return (
-    <div>
       <div className="Container_One">
         <SeccionOne />
         <SeccionTwo />
       </div>
-    </div>
   );
 };

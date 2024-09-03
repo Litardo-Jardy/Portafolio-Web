@@ -1,5 +1,6 @@
 html{
      box-sizing: border-box;
+overflow-x: hidden;
      scroll-behavior: smooth;
 }
              
@@ -17,11 +18,7 @@ body{
   color: #fff;
   display: flex;
   justify-content: center;
-  box-sizing: border-box;
-  border: 2px solid #212529;
+  border: 1px solid #212529;
   border-radius: 10px;
   box-sizing: border-box;}
 
-  @media (max-width:510px){
-    .Container_One{
-    width: 100%;}}
