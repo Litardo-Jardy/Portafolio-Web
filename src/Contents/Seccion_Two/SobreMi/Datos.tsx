@@ -47,22 +47,26 @@ const Datos = () =>{
                      <ItemTechnologi> <DiGithubBadge size="40px" color="#11dbcf" /> </ItemTechnologi>
                   </ListTechnologi>
 
-            </Container>
-      )
-}
+            </Container>)}
 
+/*-----------Styles----------------*/
 const Container = styled.div`
       width: 60%;
       padding: 3px;
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       margin-top: -5px;
+
+     @media(max-width: 730px){
+         margin-top: 100px}
 
       @media(max-width: 510px){
          margin-top: 100px;
-         width: 82%;
-      }
-`;
+         width: 85%}
+
+      @media(max-width: 410px){
+         width: 90%}`;
 
 const Title = styled.h2`
      width: 100%;
@@ -75,14 +79,22 @@ const Parrafo = styled.p`
       font-family: "Kalam", cursive;
       text-align: justify;
       font-size: 16px;
-      width: 100%`;
+      width: 100%;
+
+      @media(max-width: 410px){
+         width: 82%}`;
 
 const ListTechnologi = styled.div`
       width: 100%;
       margin-top: 10px;
       display: flex;
       flex-direction: colunm;
-      justify-content: space-around`;
+      justify-content: space-around;
+
+      @media(max-width: 410px){
+         position: relative;
+         left: -30px;
+         width: 80%}`;
 
 const ItemTechnologi = styled.span`
       text-decoration: none`

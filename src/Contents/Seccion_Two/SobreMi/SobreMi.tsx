@@ -17,6 +17,7 @@ const SobreMi = () =>{
                    <Datos/>
            </Container>)}
 
+/*-----------Styles----------------*/
 const Container = styled.div`
       display: flex;
       flex-wrap: wrap;
@@ -35,7 +36,10 @@ const ImageContainer = styled.div`
       top: 70px;
 
       @media (max-width: 510px) {
-         top: 60px}`;
+         top: 60px}
+
+      @media (max-width: 410px) {
+         left: -35px}`;
 
 const Img = styled.img`
       height: 260px; 
