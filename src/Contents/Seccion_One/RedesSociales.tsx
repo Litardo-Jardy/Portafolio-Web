@@ -1,4 +1,3 @@
-import './seccionOne.css';
 import { AiFillGithub } from 'react-icons/ai';
 import { FiInstagram } from 'react-icons/fi';
 import {  AiFillLinkedin } from 'react-icons/ai';

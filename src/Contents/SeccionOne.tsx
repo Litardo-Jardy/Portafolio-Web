@@ -1,6 +1,6 @@
 import Navegacion from "./Seccion_One/Navegacion.tsx";
 import RedesSociales from "./Seccion_One/RedesSociales.tsx";
-import imagen from './Seccion_Two/SobreMi/Image_SobreMi/PerfilOne.jpeg'
+import imagen from './Seccion_Two/SobreMi/Image_SobreMi/PerfilOne.jpeg';
 import styled from 'styled-components';
 
 const SeccionOne = () =>{
@@ -13,7 +13,6 @@ const SeccionOne = () =>{
                <SubTitle>Software develoment</SubTitle>
                <Navegacion />
                <RedesSociales />
-
             </Container>)}
 
 /*-----------Styles----------------*/
@@ -63,6 +62,5 @@ const SubTitle = styled.h2`
            position: relative;
            width: 165px;
            top: -15px`;
-
 
 export default SeccionOne;
