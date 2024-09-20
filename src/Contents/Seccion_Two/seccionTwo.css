@@ -1,195 +1,225 @@
+.Image {
+  width: 300px;
+  height: 500px;
+  padding: 3px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 75px;
+}
 
-.Image{
-      width: 300px;
-      height: 500px;
-      padding: 3px;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      top: 75px;}
-
-.Img{
-      height: 200px;
-      width: 200px;
-      border-radius: 51%;
-      text-align: center ;}
-
+.Img {
+  height: 200px;
+  width: 200px;
+  border-radius: 51%;
+  text-align: center;
+}
 
 /*    ESTILOS DE HABILIDADES */
-.Container-Habilidades{
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: 13px;
-      justify-content: center;}
+.Container-Habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 13px;
+  justify-content: center;
+}
 
-.Title-Habilidades{
-      width: 100%;}
+.Title-Habilidades {
+  width: 100%;
+}
 
-.title-line{
-      font-size: 15px;
-      width: 400px;
-      font-family: 'Poppins', sans-serif;}
+.title-line {
+  font-size: 15px;
+  width: 400px;
+  font-family: "Poppins", sans-serif;
+}
 
-.line{
-      color: #18d26e;
-      width: 300px;
-      position: relative;
-      bottom: 7px;}
+.line {
+  color: #18d26e;
+  width: 300px;
+  position: relative;
+  bottom: 7px;
+}
 
-.Container-Habilidades-Two{
-      border-top: 2px #18d26e solid;
-      border-radius: 5px;
-      background-color: rgba(255, 255, 255, 0.08);
-      width: 300px;
-      margin: 15px;
-      box-shadow: 0px 2px 3px rgb(0,0,0,0.3);
-      font-family: 'Poppins', sans-serif;}
+.Container-Habilidades-Two {
+  border-top: 2px #18d26e solid;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.08);
+  width: 300px;
+  margin: 15px;
+  box-shadow: 0px 2px 3px rgb(0, 0, 0, 0.3);
+  font-family: "Poppins", sans-serif;
+}
 
-.Container-Habilidades-Tree{
-      margin: 10px;}
-      
-.Tecnologias{
-      font-size: 20px;
-      position: relative;
-      top: -15px;
-      left: 10px;}
+.Container-Habilidades-Tree {
+  margin: 10px;
+}
+
+.Tecnologias {
+  font-size: 20px;
+  position: relative;
+  top: -15px;
+  left: 10px;
+}
 
 /*  ESTILOS DE PROYECTOS */
-.Container-Proyectos{
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: s;
-     width: 100%;}
+.Container-Proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
 
-.Title-Proyects{
-     width: 100%;}
+.Title-Proyects {
+  width: 100%;
+}
 
-.Title-Line-Proyects{
-    font-size:16px ;
-    width: 100%;}
+.Title-Line-Proyects {
+  font-size: 16px;
+  width: 100%;
+}
 
-.Line-Proyects{
-    color: #18d26e;
-    width: 300px;
-    position: relative;
-    bottom: 7px;}
+.Line-Proyects {
+  color: #18d26e;
+  width: 300px;
+  position: relative;
+  bottom: 7px;
+}
 
-.Container-Proyects-Two{
-     overflow-x:scroll;
-     display : inline-flex;
-     width: 60%;
-     margin: 5px;
-     margin-left: 40px;}
+.Container-Proyects-Two {
+  overflow-x: scroll;
+  display: inline-flex;
+  width: 60%;
+  margin: 5px;
+  margin-left: 40px;
+}
 
-.Img-Proyects{
-     max-width: 100%;
-     padding: 3px; 
-     padding-left: 5px; 
-     height: 350px;
-     border-radius: 10px;}
+.Img-Proyects {
+  max-width: 100%;
+  padding: 3px;
+  padding-left: 5px;
+  height: 350px;
+  border-radius: 10px;
+}
 
-.h3-proyects-container{
-    width: 100%;
-    font-family: 'Poppins', sans-serif;}
+.h3-proyects-container {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
 
-.link-proyects{
-    text-decoration: none;
-    color: #18d26e;
-    font-size: 12px;
-    margin-left: 5px;}
+.link-proyects {
+  text-decoration: none;
+  color: #18d26e;
+  font-size: 12px;
+  margin-left: 5px;
+}
 
-.Git{
-    font-size: 12px;
-    width: 50%;
-    position: relative;
-    left: 20px;
-    top: 17px;}
+.Git {
+  font-size: 12px;
+  width: 50%;
+  position: relative;
+  left: 20px;
+  top: 17px;
+}
 
-.Parrafo-Proyects{
-    position: relative;
-    top: -12px;
-    font-family: 'Poppins', sans-serif;}
-
+.Parrafo-Proyects {
+  position: relative;
+  top: -12px;
+  font-family: "Poppins", sans-serif;
+}
 
 /*     ESTILOS DE CONTACTO    */
 
-.Container-Contacto{
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;}
-
-.Title-Contacto{
-      width: 100%;}
-
-.Container{
-       margin-top: 28px;
-       width: 100%;}
-       
-.Formik_Container{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 100%;}
-       
-.Form_Container{
-      width: 60%;}
-       
-.Label_Form{
-      width: 100%;   
-      font-size: 23px;
-      font-family: 'Poppins', sans-serif;   
-      margin-top: -25px;}
-
-.Field_Form{
-      border: none;
-      width: 100%;
-      border-bottom: 2px solid #18d26e;
-      background-color: transparent;
-      color: #fff;
-      font-family: 'Poppins', sans-serif;
-      outline: none;
-      padding: 2px;
-      margin-top: 17px;}
-
-.Error_Menssage{
-      width: 100%; 
-      font-size: 12px;
-      position: relative;
-      bottom: 7px;
-      color: red; 
-      font-family: 'Poppins', sans-serif;}
-       
-.Submit_Buttom{
-      width: 100%; 
-      text-align: center;
-      background-color:  #10b35c;
-      cursor: pointer;
-      font-family: 'Poppins', sans-serif;   
-      border-radius: 10px;
-      margin-top: 20px;
-      font-size: 18px;
-      padding: 3px;
-      border: 2px solid #11dbcf;}
-
-.Submit_Buttom:hover{
-      background-color:  #077a3d;}
-
-@media (max-width:510px){
-     .Container-Sobre-Mi{
-        justify-content: center;}
-      .Image{
-            left: -25px;
-      }
-     .Parrafo{
-         width: 100%;
-         text-align: start;}      
-
-     .Container-Habilidades{
-            justify-content: start;}
+.Container-Contacto {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-@media (max-width:810px){
-       .Container-Proyects-Two{
-               width: 100%;
-               margin-left: 0px; } 
+.Title-Contacto {
+  width: 100%;
+}
+
+.Container {
+  margin-top: 28px;
+  width: 100%;
+}
+
+.Formik_Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.Form_Container {
+  width: 60%;
+}
+
+.Label_Form {
+  width: 100%;
+  font-size: 23px;
+  font-family: "Poppins", sans-serif;
+  margin-top: -25px;
+}
+
+.Field_Form {
+  border: none;
+  width: 100%;
+  border-bottom: 2px solid #18d26e;
+  background-color: transparent;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  padding: 2px;
+  margin-top: 17px;
+}
+
+.Error_Menssage {
+  width: 100%;
+  font-size: 12px;
+  position: relative;
+  bottom: 7px;
+  color: red;
+  font-family: "Poppins", sans-serif;
+}
+
+.Submit_Buttom {
+  width: 100%;
+  text-align: center;
+  background-color: #10b35c;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 3px;
+  border: 2px solid #11dbcf;
+}
+
+.Submit_Buttom:hover {
+  background-color: #077a3d;
+}
+
+@media (max-width: 510px) {
+  .Container-Sobre-Mi {
+    justify-content: center;
+  }
+  .Image {
+    left: -25px;
+  }
+  .Parrafo {
+    width: 100%;
+    text-align: start;
+  }
+
+  .Container-Habilidades {
+    justify-content: start;
+  }
+}
+
+@media (max-width: 810px) {
+  .Container-Proyects-Two {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
