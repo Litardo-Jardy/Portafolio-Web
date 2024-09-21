@@ -4,34 +4,106 @@ import { FaDotCircle } from "react-icons/fa";
 import { CiWifiOn } from "react-icons/ci";
 import { FaSignal } from "react-icons/fa";
 import { FaBluetoothB } from "react-icons/fa";
-import { FaSquareFull } from "react-icons/fa";
-import { GoTriangleLeft } from "react-icons/go";
-import { FaCircle } from "react-icons/fa";
+import { RxLetterCaseCapitalize } from "react-icons/rx";
+import { AiOutlineReload } from "react-icons/ai";
+import { FaLock } from "react-icons/fa";
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
+import { TbArrowDownBar } from "react-icons/tb";
+import { IoBookOutline } from "react-icons/io5";
+import { IoCopyOutline } from "react-icons/io5";
+import { RiShareBoxFill } from "react-icons/ri";
 
 const Mobile = () => {
   const Container = styled.div`
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 360px;
-    height: 700px;
-    border: 10px #000 solid;
-    border-radius: 35px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(/assets/device.png);
+    width: 434px;
+    height: 800px;
+    transform: scale(0.98);
+    @media (max-width: 910px) {
+      position: relative;
+      top: 15px;
+    }
   `;
 
-  const PartTop = styled.span`
-    width: 390px;
-    display: flex;
-    position: absolute;
-    z-index: 2;
-    justify-content: space-around;
-    height: 33px;
+  const Elements = styled.div`
+    width: 365px;
+    height: 785px;
+    position: relative;
+    left: 35.5px;
+    top: 6px;
+    overflow: hidden;
+    transform: scale(0.98);
+    border-radius: 55px;
+    @media (max-width: 455px) {
+      left: 31px;
+    }
   `;
+
+  const SpaceCamera = styled.div`
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(/assets/camera.png);
+    width: 145px;
+    height: 60px;
+    position: relative;
+    left: 110px;
+    top: -16px;
+    z-index: 2;
+  `;
+
+  const ContainerHeader = styled.header`
+    background: rgb(37, 42, 47);
+    z-index: 1;
+    position: absolute;
+    top: -1px;
+    width: 100%;
+  `;
+
+  const Header = styled.div`
+    height: 28px;
+    display: flex;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 16px 35px 0px 50px;
+    display: flex;
+    justify-content: space-between;
+  `;
+
+  const Footer = styled.footer`
+    color: rgb(238, 238, 239);
+    background: rgb(37, 42, 47);
+    border-top: 1px solid rgb(37, 42, 47);
+    height: 110px;
+    width: 100%;
+    position: absolute;
+    top: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  `;
+
+  const UrlBar = styled.div`
+   width: 85%;
+   height: 40px;
+   margin 5px;
+   border-radius: 15px;
+   background: rgba(238, 238, 239, 0.19);
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+   top: -5px;
+`;
 
   const Hours = styled.p`
-    font-size: 12px;
+    font-size: 13px;
     position: relative;
-    top: -10px;
+    top: -15px;
     left: -7px;
     z-index: 2;
     font-family: "IBM Plex Serif", serif;
@@ -48,96 +120,92 @@ const Mobile = () => {
     display: flex;
     z-index: 2;
     flex-direction: row;
-    width: 70px;
+    width: 85px;
     position: relative;
     top: 5px;
     left: 14px;
     justify-content: space-between;
   `;
 
-  const ContinerImage = styled.div`
+  const ContainerImage = styled.div`
     overflow-x: scroll;
+    overflow-y: scroll;
     display: inline-flex;
+    width: 370px;
+    height: 637px;
+    position: relative;
+    top: -17px;
   `;
 
   const Image = styled.img`
-    width: 353px;
+    width: 370px;
+    height: 850px;
     position: relative;
-    border-radius: 20px;
     object-fit: cover;
-    padding: 3px;
-  `;
-
-  const PartBottom = styled.span`
-    width: 320px;
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-    z-index: 3;
-  `;
-
-  const Buttons = styled.span`
-    position: relative;
-    top: 662px;
-    z-index: 3;
-  `;
-
-  interface SideButtonsProps {
-    heigth: string;
-    top: string;
-  }
-
-  const SideButtons = styled.span<SideButtonsProps>`
-    height: ${(props) => props.heigth};
-    width: 10px;
-    border-radius: 15%;
-    background-color: #000;
-    position: absolute;
-    left: 379px;
-    top: ${(props) => props.top};
-    z-index: 3;
   `;
 
   return (
     <Container>
-      <PartTop>
-        <SideButtons heigth="110px" top="110px" />
-        <SideButtons heigth="70px" top="240px" />
-        <Hours>8:00pm</Hours>
-        <Camera>
-          <FaDotCircle size="17" />
-        </Camera>
-        <Items>
-          <span>
-            <FaBluetoothB size="13" />
-          </span>
-          <span>
-            <FaSignal size="11" />
-          </span>
-          <span>
-            <FaSignal size="11" />
-          </span>
-          <span>
-            <CiWifiOn size="17" />
-          </span>
-        </Items>
-      </PartTop>
-      <ContinerImage>
-        <Image src={BPeliculas1} />
-        <Image src={BPeliculas1} />
-        <Image src={BPeliculas1} />
-      </ContinerImage>
-      <PartBottom>
-        <Buttons>
-          <GoTriangleLeft size="15" />
-        </Buttons>
-        <Buttons>
-          <FaCircle size="13" />
-        </Buttons>
-        <Buttons>
-          <FaSquareFull size="12" />
-        </Buttons>
-      </PartBottom>
+      <Elements>
+        <SpaceCamera />
+        <ContainerHeader>
+          <Header>
+            <Hours>8:00pm</Hours>
+            <Items style={{ top: "-2px" }}>
+              <span>
+                <FaBluetoothB size="17" />
+              </span>
+              <span>
+                <FaSignal size="15" />
+              </span>
+              <span>
+                <FaSignal size="15" />
+              </span>
+              <span>
+                <CiWifiOn size="22" />
+              </span>
+            </Items>
+          </Header>
+        </ContainerHeader>
+        <ContainerImage>
+          <Image src="/assets/LocalMarket/ImageOne.png" />
+          <Image src="/assets/LocalMarket/ImageTwo.png" />
+          <Image src="/assets/LocalMarket/ImageTree.png" />
+          <Image src="/assets/LocalMarket/ImageFour.png" />
+        </ContainerImage>
+        <Footer>
+          <UrlBar>
+            <RxLetterCaseCapitalize
+              size="23px"
+              style={{ position: "relative", left: "20px", top: "8px" }}
+            />
+            <p style={{ fontSize: "11px", position: "relative", top: "2px" }}>
+              <FaLock size="10" /> https://portafolio.vercel.app
+            </p>
+            <AiOutlineReload
+              size="20px"
+              style={{ position: "relative", left: "-20px", top: "13px" }}
+            />
+          </UrlBar>
+          <Items style={{ width: "90%", left: "0" }}>
+            <span>
+              <IoIosArrowBack size="25" />
+            </span>
+            <span>
+              <IoIosArrowForward size="25" />
+            </span>
+            <span>
+              <RiShareBoxFill size="25" />
+            </span>
+            <span>
+              <IoBookOutline size="25" />
+            </span>
+            <span>
+              <IoCopyOutline size="25" />
+            </span>
+          </Items>
+        </Footer>
+      </Elements>
     </Container>
   );
 };

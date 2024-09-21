@@ -38,7 +38,11 @@ const Proyectos = () => {
     flex-direction: column;
     width: 45%;
     position: relative;
-    top: 40px;
+    top: 140px;
+    @media (max-width: 910px) {
+      width: 82%;
+      top: 0px;
+    }
   `;
 
   const Title = styled.h1`
@@ -71,10 +75,6 @@ const Proyectos = () => {
     text-align: justify;
     font-size: 18px;
     width: 100%;
-
-    @media (max-width: 410px) {
-      width: 82%;
-    }
   `;
 
   const Span = styled.span`
@@ -107,6 +107,42 @@ const Proyectos = () => {
           PROYECTOS <span className="Line-Proyects">____________</span>
         </h1>
       </div>
+
+      <ContainerProjects>
+        {/* <DataProjects> */}
+        {/*   <Title> */}
+        {/*     - LocalMarket */}
+        {/*     <LinkRedes href="https://github.com/Litardo-Jardy/LocalMarket"> */}
+        {/*       <AiFillGithub color="#11dbcf" size="45px" /> */}
+        {/*     </LinkRedes> */}
+        {/*   </Title> */}
+        {/*   <ContainerLabel> */}
+        {/*     <Label color="#28a745">Mobile</Label> */}
+        {/*     <Label color="#28a745">Web</Label> */}
+        {/*     <Label color="#007bff">Not-deploy</Label> */}
+        {/*     <Label color="#007bff">Not-finished</Label> */}
+        {/*   </ContainerLabel> */}
+        {/*   <Parrafo> */}
+        {/*     LocalMarket es un proyecto dedicado tanto a los clientes como a los */}
+        {/*     comercios locales dentro de un area determinada, este proyecto */}
+        {/*     Movil/Web tiene como fin conectar a estas dos entidades para */}
+        {/*     encontrar un benificio mutuo entre ambos, tanto para los comercios */}
+        {/*     locales en forma de tener mas visualizacion en su entorno como para */}
+        {/*     los clientes al poder examinar los negocios locales en busca de sus */}
+        {/*     productos deseados desde una misma ubicacion. LocaMarket intrega */}
+        {/*     recursos de google maps mediante su API, como BackEnd utiliza una */}
+        {/*     api rest desarrollada en php "API_local_market" y como herramienta */}
+        {/*     adicional en modo desarrollo utilza una herramientra extra */}
+        {/*     "SkyLocal". */}
+        {/*   </Parrafo> */}
+        {/*   <ContainerLabel> */}
+        {/*     <Span>Technologis:</Span> */}
+        {/*     <Label color="#02569B">Flutter</Label> */}
+        {/*     <Label color="#777BB4"> php</Label> */}
+        {/*   </ContainerLabel> */}
+        {/* </DataProjects> */}
+        <Mobile />
+      </ContainerProjects>
 
       <ContainerProjects>
         <DataProjects>
