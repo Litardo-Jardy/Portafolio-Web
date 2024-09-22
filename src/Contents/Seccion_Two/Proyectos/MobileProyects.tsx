@@ -1,6 +1,4 @@
-import BPeliculas1 from "./Image_Proyectos/Buscador_peliculas1.jpeg";
 import styled from "styled-components";
-import { FaDotCircle } from "react-icons/fa";
 import { CiWifiOn } from "react-icons/ci";
 import { FaSignal } from "react-icons/fa";
 import { FaBluetoothB } from "react-icons/fa";
@@ -9,7 +7,6 @@ import { AiOutlineReload } from "react-icons/ai";
 import { FaLock } from "react-icons/fa";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
-import { TbArrowDownBar } from "react-icons/tb";
 import { IoBookOutline } from "react-icons/io5";
 import { IoCopyOutline } from "react-icons/io5";
 import { RiShareBoxFill } from "react-icons/ri";

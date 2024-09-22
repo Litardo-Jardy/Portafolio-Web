@@ -1,0 +1,95 @@
+{
+  "projects": [
+    {
+      "name": "- Library Online",
+      "repository": "https://github.com/Litardo-Jardy/Libreria-Online",
+      "deploy": "https://libreria-online.vercel.app/",
+      "labels": [
+        {
+          "color": "#28a745",
+          "name": "Web"
+        },
+
+        {
+          "color": "#28a745",
+          "name": "Deploy"
+        },
+
+        {
+          "color": "#28a745",
+          "name": "Finished"
+        }
+      ],
+      "descripcion": "LibraryOnline es un proyecto desarrollado con el fin de crear y gestionar tu propia biblioteca de lectura en línea con funcionalidades como la persistencia de datos mediante el navegador, el buen rendimiento, etc. Este proyecto está construido desde 0 con React.js aprovechando sus diversas herramientas para crear interfaces de usuario agradables e interactivas, la app cuenta con un estado global el cual es gestionado por medio de Redux Toolkit que, incluyendo la implementación de TypeScript, dan una experiencia de usuario dinámica y confiable. Puedes visitar el repositorio del proyecto (Icono de github a lado del nombre) para enterarte un poco más de cómo está construido.",
+      "technologis": [
+        {
+          "color": "#02569B",
+          "name": "TypeScript"
+        },
+
+        {
+          "color": "#777BB4",
+          "name": "React"
+        }
+      ],
+      "device": 0,
+      "images": [
+        "/assets/libreria/ImageOne.png",
+        "/assets/libreria/ImageTwo.png"
+      ],
+      "imagesResponsive": [""],
+      "leftToRigth": false
+    },
+
+    {
+      "name": "- LocalMarket",
+      "repository": "https://github.com/Litardo-Jardy/LocalMarket",
+      "deploy": "",
+      "labels": [
+        {
+          "color": "#28a745",
+          "name": "Mobile"
+        },
+
+        {
+          "color": "#28a745",
+          "name": "Web"
+        },
+
+        {
+          "color": "#007bff",
+          "name": "Not-deploy"
+        },
+
+        {
+          "color": "#007bff",
+          "name": "Not-Finished"
+        }
+      ],
+      "descripcion": "LocalMarket es un proyecto dedicado tanto a los clientes como a los comercios locales dentro de un área determinada, este proyecto Móvil/Web tiene como fin conectar a estas dos entidades para encontrar un beneficio mutuo entre ambos, tanto para los comercios locales en forma de tener más visualización en su entorno como para los clientes al poder examinar los negocios locales en busca de sus productos deseados desde una misma ubicación. LocalMarket integra recursos de Google Maps mediante su API, como BackEnd utiliza una API REST desarrollada en PHP 'API_local_market' y como herramienta adicional en modo desarrollo utiliza una herramienta extra 'SkyLocal'. Puedes monitorear el progreso del proyecto y las herramientas que se utilizan en el repositorio dejado al principio.",
+      "technologis": [
+        {
+          "color": "#02569B",
+          "name": "Flutter"
+        },
+
+        {
+          "color": "#777BB4",
+          "name": "php"
+        }
+      ],
+      "device": 1,
+      "images": [
+        "/assets/libreria/ImageOne.png",
+        "/assets/libreria/ImageTwo.png"
+      ],
+      "imagesResponsive": [
+        "/assets/LocalMarket/ImageOne.png",
+        "/assets/LocalMarket/ImageTwo.png",
+        "/assets/LocalMarket/ImageTree.png",
+        "/assets/LocalMarket/ImageFour.png"
+      ],
+      "leftToRigth": true
+    }
+  ]
+}
