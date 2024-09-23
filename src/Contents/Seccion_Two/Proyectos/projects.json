@@ -34,10 +34,13 @@
       ],
       "device": 0,
       "images": [
-        "/assets/libreria/ImageOne.png",
-        "/assets/libreria/ImageTwo.png"
+        { "url": "/assets/libreria/ImageOne.png" },
+        { "url": "/assets/libreria/ImageTwo.png" }
       ],
-      "imagesResponsive": [""],
+      "imagesResponsive": [
+        { "url": "/assets/libreria/ResponsiveOne.png" },
+        { "url": "/assets/libreria/ResponsiveTwo.png" }
+      ],
       "leftToRigth": false
     },
 
@@ -80,14 +83,14 @@
       ],
       "device": 1,
       "images": [
-        "/assets/libreria/ImageOne.png",
-        "/assets/libreria/ImageTwo.png"
+        { "url": "/assets/libreria/ImageOne.png" },
+        { "url": "/assets/libreria/ImageTwo.png" }
       ],
       "imagesResponsive": [
-        "/assets/LocalMarket/ImageOne.png",
-        "/assets/LocalMarket/ImageTwo.png",
-        "/assets/LocalMarket/ImageTree.png",
-        "/assets/LocalMarket/ImageFour.png"
+        { "url": "/assets/LocalMarket/ImageOne.png" },
+        { "url": "/assets/LocalMarket/ImageTwo.png" },
+        { "url": "/assets/LocalMarket/ImageTree.png" },
+        { "url": "/assets/LocalMarket/ImageFour.png" }
       ],
       "leftToRigth": true
     }

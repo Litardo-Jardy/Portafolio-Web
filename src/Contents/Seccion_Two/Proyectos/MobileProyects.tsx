@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import { CiWifiOn } from "react-icons/ci";
 import { FaSignal } from "react-icons/fa";
 import { FaBluetoothB } from "react-icons/fa";
@@ -11,136 +10,30 @@ import { IoBookOutline } from "react-icons/io5";
 import { IoCopyOutline } from "react-icons/io5";
 import { RiShareBoxFill } from "react-icons/ri";
 
-const Mobile = () => {
-  const Container = styled.div`
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(/assets/device.png);
-    width: 434px;
-    height: 800px;
-    transform: scale(0.98);
-    @media (max-width: 910px) {
-      position: relative;
-      top: 15px;
-    }
-  `;
+//-----Styles;
+import {
+  Container,
+  Elements,
+  SpaceCamera,
+  ContainerHeader,
+  Header,
+  Footer,
+  UrlBar,
+  Hours,
+  Items,
+  ContainerImage,
+  Image,
+} from "./StyleComponent.tsx";
 
-  const Elements = styled.div`
-    width: 365px;
-    height: 785px;
-    position: relative;
-    left: 35.5px;
-    top: 6px;
-    overflow: hidden;
-    transform: scale(0.98);
-    border-radius: 55px;
-    @media (max-width: 455px) {
-      left: 31px;
-    }
-  `;
+interface Item {
+  url: string;
+}
 
-  const SpaceCamera = styled.div`
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(/assets/camera.png);
-    width: 145px;
-    height: 60px;
-    position: relative;
-    left: 110px;
-    top: -16px;
-    z-index: 2;
-  `;
+interface MobileProps {
+  images: Item[];
+}
 
-  const ContainerHeader = styled.header`
-    background: rgb(37, 42, 47);
-    z-index: 1;
-    position: absolute;
-    top: -1px;
-    width: 100%;
-  `;
-
-  const Header = styled.div`
-    height: 28px;
-    display: flex;
-    font-weight: 700;
-    font-size: 15px;
-    padding: 16px 35px 0px 50px;
-    display: flex;
-    justify-content: space-between;
-  `;
-
-  const Footer = styled.footer`
-    color: rgb(238, 238, 239);
-    background: rgb(37, 42, 47);
-    border-top: 1px solid rgb(37, 42, 47);
-    height: 110px;
-    width: 100%;
-    position: absolute;
-    top: 680px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  `;
-
-  const UrlBar = styled.div`
-   width: 85%;
-   height: 40px;
-   margin 5px;
-   border-radius: 15px;
-   background: rgba(238, 238, 239, 0.19);
-   display: flex;
-   justify-content: space-between;
-   position: relative;
-   top: -5px;
-`;
-
-  const Hours = styled.p`
-    font-size: 13px;
-    position: relative;
-    top: -15px;
-    left: -7px;
-    z-index: 2;
-    font-family: "IBM Plex Serif", serif;
-    color: #fff;
-  `;
-
-  const Camera = styled.span`
-    position: relative;
-    top: 5px;
-    left: 10px;
-  `;
-
-  const Items = styled.div`
-    display: flex;
-    z-index: 2;
-    flex-direction: row;
-    width: 85px;
-    position: relative;
-    top: 5px;
-    left: 14px;
-    justify-content: space-between;
-  `;
-
-  const ContainerImage = styled.div`
-    overflow-x: scroll;
-    overflow-y: scroll;
-    display: inline-flex;
-    width: 370px;
-    height: 637px;
-    position: relative;
-    top: -17px;
-  `;
-
-  const Image = styled.img`
-    width: 370px;
-    height: 850px;
-    position: relative;
-    object-fit: cover;
-  `;
-
+const Mobile = ({ images }: MobileProps) => {
   return (
     <Container>
       <Elements>
@@ -165,10 +58,9 @@ const Mobile = () => {
           </Header>
         </ContainerHeader>
         <ContainerImage>
-          <Image src="/assets/LocalMarket/ImageOne.png" />
-          <Image src="/assets/LocalMarket/ImageTwo.png" />
-          <Image src="/assets/LocalMarket/ImageTree.png" />
-          <Image src="/assets/LocalMarket/ImageFour.png" />
+          {images.map((image) => (
+            <Image src={image.url} />
+          ))}
         </ContainerImage>
         <Footer>
           <UrlBar>
