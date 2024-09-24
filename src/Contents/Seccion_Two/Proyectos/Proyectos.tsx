@@ -83,10 +83,10 @@ const Proyectos = () => {
             </ContainerLabel>
           </DataProjects>
 
-          {project.device == 0 && scroll > 970 ? (
-            <Web images={project.images} />
-          ) : (
+          {project.device == 1 || scroll < 970 ? (
             <Mobile images={project.imagesResponsive} />
+          ) : (
+            <Web images={project.images} />
           )}
         </ContainerDevice>
       ))}

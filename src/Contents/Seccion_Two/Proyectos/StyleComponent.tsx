@@ -209,8 +209,6 @@ export const ContainerProjects = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  position: relative;
-  top: 30px;
 `;
 
 interface PropsContainerDevice {
@@ -232,10 +230,14 @@ export const DataProjects = styled.div`
   flex-direction: column;
   width: 45%;
   position: relative;
-  top: 90px;
+  top: 70px;
+
+  @media (max-width: 930px) {
+    top: 5px;
+  }
   @media (max-width: 910px) {
     width: 82%;
-    top: 0px;
+    top: 5px;
   }
 `;
 
