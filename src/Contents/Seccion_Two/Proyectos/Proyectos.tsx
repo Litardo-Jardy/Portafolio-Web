@@ -1,9 +1,12 @@
 import "../seccionTwo.css";
 import { AiFillGithub } from "react-icons/ai";
 import { GoLinkExternal } from "react-icons/go";
+
 import Mobile from "./MobileProyects.tsx";
 import Web from "./WebProyects.tsx";
+
 import { useEffect, useState } from "react";
+
 import data from "./projects.json";
 
 //Styles;
