@@ -21,7 +21,7 @@ import {
 const Datos = () => {
   return (
     <ContainerDatos>
-      <TitleDatos>Hello!</TitleDatos>
+      <TitleDatos>Hola!</TitleDatos>
       <div style={{ width: "100%" }}>
         <Parrafo>
           "Como Tecnólogo Superior en desarrollo de software, me enfoco en

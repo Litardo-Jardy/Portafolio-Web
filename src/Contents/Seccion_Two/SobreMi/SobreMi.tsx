@@ -17,9 +17,9 @@ const SobreMi = () => {
     <Container id="sobreMi">
       <div style={{ width: "100%" }}>
         <Title>
-          ABOUT ME <Line>____________</Line>
+          SobreMi <Line>____________</Line>
         </Title>
-        <SubTitle>MORE ABOUT ME</SubTitle>
+        <SubTitle>Mas sobreMi</SubTitle>
       </div>
       <ImageContainer>
         <Img src={imagen} />
@@ -28,7 +28,7 @@ const SobreMi = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          View my resume
+          Curriculum
         </Resume>
         <br />
       </ImageContainer>

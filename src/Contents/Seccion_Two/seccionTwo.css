@@ -146,9 +146,8 @@
 
 .Formik_Container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
+  width: 55%;
 }
 
 .Form_Container {

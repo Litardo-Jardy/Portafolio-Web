@@ -9,8 +9,8 @@ const SeccionOne = () => {
       <ImageContainer>
         <Img src={imagen} />
       </ImageContainer>
-      <Title>Tech. Jardy Litardo</Title>
-      <SubTitle>Software develoment</SubTitle>
+      <Title>Tec. Jardy Litardo</Title>
+      <SubTitle>Desarrollador de Software</SubTitle>
       <Navegacion />
       <RedesSociales />
     </Container>
@@ -68,7 +68,7 @@ const Title = styled.h1`
 
 const SubTitle = styled.h2`
       text-align:center;
-      font-size: 20px;
+      font-size: 18px;
       border-bottom: 2px solid #18d26e;
       padding: 3px;
       margin-top: 20px;
@@ -78,7 +78,7 @@ const SubTitle = styled.h2`
       font-family: 'Karla', sans-serif;
 
       @media (max-width:510px){
-           font-size: 17px;
+           font-size: 16px;
            position: relative;
            width: 165px;
            top: -10px`;

@@ -44,9 +44,9 @@ const Proyectos = () => {
     <ContainerProjects id="proyects">
       <div className="Title-Proyects">
         <h1 className="Title-Line-Proyects">
-          PROJECTS <span className="Line-Proyects">____________</span>
+          Proyectos <span className="Line-Proyects">____________</span>
         </h1>
-        <SubTitle>MY PROJECTS</SubTitle>
+        <SubTitle>Mis Proyectos</SubTitle>
       </div>
 
       {projects.map((project) => (
