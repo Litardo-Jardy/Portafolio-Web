@@ -1,13 +1,12 @@
-import Navegacion from "./Seccion_One/Navegacion.tsx";
-import RedesSociales from "./Seccion_One/RedesSociales.tsx";
-import imagen from "./Seccion_Two/SobreMi/Image_SobreMi/PerfilOne.jpeg";
+import Navegacion from "./Navegacion.tsx";
+import RedesSociales from "./RedesSociales.tsx";
 import styled from "styled-components";
 
 const SeccionOne = () => {
   return (
     <Container id="presentacion">
       <ImageContainer>
-        <Img src={imagen} />
+        <Img src="/assets/Profile/PerfilOne.jpeg" />
       </ImageContainer>
       <Title>Tec. Jardy Litardo</Title>
       <SubTitle>Desarrollador de Software</SubTitle>

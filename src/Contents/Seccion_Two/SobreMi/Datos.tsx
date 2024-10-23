@@ -42,19 +42,19 @@ const Datos = () => {
       </div>
       <ListTechnologi>
         <ItemTechnologi>
-          <AiFillHtml5 size="40px" color="rgb(241, 99, 27)" />{" "}
+          <AiFillHtml5 size="40px" color="rgb(241, 99, 27)" />
         </ItemTechnologi>
         <ItemTechnologi>
-          <DiCss3 size="40px" color="#007bff" />{" "}
+          <DiCss3 size="40px" color="#007bff" />
         </ItemTechnologi>
         <ItemTechnologi>
-          <DiJsBadge size="35px" color="#F7E04A" />{" "}
+          <DiJsBadge size="35px" color="#F7E04A" />
         </ItemTechnologi>
         <ItemTechnologi>
-          <SiTypescript size="35px" color="#007ACC" />{" "}
+          <SiTypescript size="35px" color="#007ACC" />
         </ItemTechnologi>
         <ItemTechnologi>
-          <DiReact size="40px" color="#61DAFB" />{" "}
+          <DiReact size="40px" color="#61DAFB" />
         </ItemTechnologi>
       </ListTechnologi>
 
@@ -66,13 +66,13 @@ const Datos = () => {
           <DiMysql size="40px" color="#00618A" />
         </ItemTechnologi>
         <ItemTechnologi>
-          <SiFlutter size="30px" color="#02569B" />{" "}
+          <SiFlutter size="30px" color="#02569B" />
         </ItemTechnologi>
         <ItemTechnologi>
           <SiDotnet size="40px" color="#512BD4" />
         </ItemTechnologi>
         <ItemTechnologi>
-          <DiGithubBadge size="40px" color="#11dbcf" />{" "}
+          <DiGithubBadge size="40px" color="#11dbcf" />
         </ItemTechnologi>
       </ListTechnologi>
     </ContainerDatos>

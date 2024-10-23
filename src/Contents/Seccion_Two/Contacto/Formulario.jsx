@@ -1,63 +1,13 @@
-import "../seccionTwo.css";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
-import styled from "styled-components";
-
-const Formik_Container = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 58%;
-`;
-
-const Container = styled.div`
-  margin-top: 28px;
-  width: 100%;
-`;
-
-const Label_Form = styled.label`
-  width: 100%;
-  font-size: 18px;
-  font-family: "Poppins", sans-serif;
-  margin-top: -25px;
-`;
-
-const Field_Form = styled.input`
-  border: none;
-  width: 100%;
-  border-bottom: 1px solid #18d26e;
-  background-color: transparent;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-  outline: none;
-  padding: 2px;
-  margin-top: 15px;
-`;
-
-const Textarea = styled.textarea`
-  border: none;
-  width: 100%;
-  border-bottom: 2px solid #18d26e;
-  background-color: transparent;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-  outline: none;
-  padding: 2px;
-  margin-top: 15px;
-`;
-
-const Submit_Buttom = styled.button`
-  width: 100%;
-  text-align: center;
-  background-color: #10b35c;
-  cursor: pointer;
-  font-family: "Poppins", sans-serif;
-  border-radius: 5px;
-  margin-top: 20px;
-  font-size: 20px;
-  padding: 5px;
-
-  border: 2px solid #10b35c;
-`;
+import {
+  Formik_Container,
+  Container,
+  Label_Form,
+  Textarea,
+  Field_Form,
+  Submit_Buttom,
+} from "./StyleComponent.tsx";
 
 const Formulario = () => {
   const [nombre, setNombre] = useState("");
@@ -99,7 +49,6 @@ const Formulario = () => {
           <Field_Form
             name="name"
             type="text"
-            className="Field_Form"
             value={nombre}
             onChange={handleNombreChange}
           />
@@ -110,7 +59,6 @@ const Formulario = () => {
           <Field_Form
             name="email"
             type="email"
-            className="Field_Form"
             value={email}
             onChange={handleEmailChange}
           />
@@ -121,14 +69,11 @@ const Formulario = () => {
           <Textarea
             name="asunto"
             type="text"
-            className="Field_Form"
             value={asunto}
             onChange={handleAsuntoChange}
           />
         </Container>
-        <Submit_Buttom type="submit" className="Submit_Buttom">
-          Enviar
-        </Submit_Buttom>
+        <Submit_Buttom type="submit">Enviar</Submit_Buttom>
       </form>
     </Formik_Container>
   );

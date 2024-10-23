@@ -12,13 +12,3 @@ body {
   image-rendering: pixelated;
   box-sizing: border-box;
 }
-
-.Container_One {
-  background-color: rgba(33, 37, 41, 0.9);
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  border: 1px solid #212529;
-  border-radius: 10px;
-  box-sizing: border-box;
-}
