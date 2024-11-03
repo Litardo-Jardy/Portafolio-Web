@@ -1,6 +1,7 @@
 import { IoLocationSharp } from "react-icons/io5";
 import { ContainerLocation, ContainerText, Text } from "./StyleComponent.tsx";
 
+import React from "react";
 const Location = () => {
   return (
     <ContainerLocation>

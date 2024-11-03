@@ -9,6 +9,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  color: #fff;
   image-rendering: pixelated;
   box-sizing: border-box;
 }

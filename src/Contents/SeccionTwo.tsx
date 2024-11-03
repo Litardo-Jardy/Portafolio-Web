@@ -2,6 +2,7 @@ import Contacto from "./Seccion_Two/Contacto/Contacto";
 import Proyectos from "./Seccion_Two/Proyectos/Proyectos";
 import SobreMi from "./Seccion_Two/SobreMi/SobreMi";
 import styled from "styled-components";
+import React from "react";
 
 const Container = styled.div`
   display: flex;

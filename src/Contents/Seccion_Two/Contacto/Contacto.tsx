@@ -3,6 +3,7 @@ import Formulario from "./Formulario";
 import Location from "./Location";
 import { SubTitle } from "../Proyectos/StyleComponent";
 import { ContainerContact } from "./StyleComponent.tsx";
+import React from "react";
 
 //Hacer el reponsive para ete modulo que paso cierto tamaño de pnatalla sea row ese flexDirection: 'row',
 const Contacto = () => {

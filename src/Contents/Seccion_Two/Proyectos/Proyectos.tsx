@@ -1,4 +1,6 @@
 import "../seccionTwo.css";
+
+import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { GoLinkExternal } from "react-icons/go";
 
@@ -50,7 +52,7 @@ const Proyectos = () => {
       </div>
 
       {projects.map((project) => (
-        <ContainerDevice ltr={project.leftToRigth}>
+        <ContainerDevice key={project.name} ltr={project.leftToRigth}>
           <DataProjects>
             <Title>
               {project.name}
@@ -72,7 +74,9 @@ const Proyectos = () => {
 
             <ContainerLabel>
               {project.labels.map((label) => (
-                <Label color={label.color}>{label.name}</Label>
+                <Label key={label.name} color={label.color}>
+                  {label.name}
+                </Label>
               ))}
             </ContainerLabel>
 
@@ -81,7 +85,9 @@ const Proyectos = () => {
             <ContainerLabel>
               <Span>Technologis:</Span>
               {project.technologis.map((technologi) => (
-                <Label color={technologi.color}>{technologi.name}</Label>
+                <Label key={technologi.name} color={technologi.color}>
+                  {technologi.name}
+                </Label>
               ))}
             </ContainerLabel>
           </DataProjects>

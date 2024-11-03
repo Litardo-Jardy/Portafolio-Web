@@ -1,6 +1,7 @@
 import Navegacion from "./Navegacion.tsx";
 import RedesSociales from "./RedesSociales.tsx";
 import styled from "styled-components";
+import React from "react";
 
 const SeccionOne = () => {
   return (

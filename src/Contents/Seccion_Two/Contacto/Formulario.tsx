@@ -1,5 +1,4 @@
-import emailjs from "@emailjs/browser";
-import { useState } from "react";
+import React from "react";
 import {
   Formik_Container,
   Container,
@@ -8,42 +7,22 @@ import {
   Field_Form,
   Submit_Buttom,
 } from "./StyleComponent.tsx";
+import SendForm from "./SendEmailJs.tsx";
 
 const Formulario = () => {
-  const [nombre, setNombre] = useState("");
-  const [email, setEmail] = useState("");
-  const [asunto, setAsunto] = useState("");
-
-  const enviarFormulario = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm("Mensaje_Jardy", "Mensaje_Jardy", e.target, "6DW4yonSEqLsD8gaJ")
-      .then((response) =>
-        alert("El mensaje se envio con exito").catch((error) => alert(error)),
-      );
-
-    setNombre("");
-    setEmail("");
-    setAsunto("");
-
-    alert("El mensaje se envio");
-  };
-
-  const handleNombreChange = (e) => {
-    setNombre(e.target.value);
-  };
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const handleAsuntoChange = (e) => {
-    setAsunto(e.target.value);
-  };
+  const {
+    handleNombreChange,
+    nombre,
+    handleEmailChange,
+    email,
+    handleAsuntoChange,
+    asunto,
+    sendForm,
+  } = SendForm();
 
   return (
     <Formik_Container>
-      <form onSubmit={enviarFormulario} style={{ width: "60%" }}>
+      <form onSubmit={sendForm} style={{ width: "60%" }}>
         <Container>
           <Label_Form>Nombre</Label_Form>
           <Field_Form
@@ -68,7 +47,6 @@ const Formulario = () => {
           <Label_Form>Asunto</Label_Form>
           <Textarea
             name="asunto"
-            type="text"
             value={asunto}
             onChange={handleAsuntoChange}
           />

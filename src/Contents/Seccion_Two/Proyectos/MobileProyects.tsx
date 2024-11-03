@@ -9,6 +9,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { IoBookOutline } from "react-icons/io5";
 import { IoCopyOutline } from "react-icons/io5";
 import { RiShareBoxFill } from "react-icons/ri";
+import React from "react";
 
 //-----Styles;
 import {
@@ -59,7 +60,7 @@ const Mobile = ({ images }: MobileProps) => {
         </ContainerHeader>
         <ContainerImage>
           {images.map((image) => (
-            <Image src={image.url} />
+            <Image key={image.url} src={image.url} />
           ))}
         </ContainerImage>
         <Footer>

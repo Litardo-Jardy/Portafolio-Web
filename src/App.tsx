@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import SeccionOne from "./Contents/Seccion_One/SeccionOne";
 import SeccionTwo from "./Contents/SeccionTwo";
+import React from "react";
+import "./Contents-css/global.css";
 
 const Conatiner_One = styled.div`
   background-color: rgba(33, 37, 41, 0.9);
-  color: #fff;
   display: flex;
   justify-content: center;
   border: 1px solid #212529;
