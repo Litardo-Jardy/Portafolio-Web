@@ -6,24 +6,21 @@ const SendForm = () => {
   const [email, setEmail] = useState("");
   const [asunto, setAsunto] = useState("");
 
+  const apiKey = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const formOne = import.meta.env.VITE_SEND_FORM_ONE;
+  const formTwo = import.meta.env.VITE_SEND_FORM_TWO;
+
   const sendForm = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    console.log(e.target);
     emailjs
-      .sendForm(
-        "Mensaje_Jardy",
-        "Mensaje_Jardy",
-        e.target as HTMLFormElement,
-        "6DW4yonSEqLsD8gaJ",
-      )
+      .sendForm(formOne, formTwo, e.target as HTMLFormElement, apiKey)
       .then(() => {
         alert("El mensaje se envió con éxito");
-      })
-      .catch((error) => alert(error));
+      });
     setNombre("");
     setEmail("");
     setAsunto("");
-
-    alert("El mensaje se envio");
   };
 
   const handleNombreChange = (e: React.ChangeEvent<HTMLInputElement>) => {

@@ -12,30 +12,60 @@ export const ContainerContact = styled.div`
 
 //---------------------------- Location Styles;
 export const ContainerLocation = styled.div`
-  width: 40%;
+  width: 48%;
   justify-content: center;
-  align-item: center;
+  display: flex;
+  flex-wrap: wrap;
+
+  border-left: 2px solid #18d26e;
+
+  @media (max-width: 800px) {
+    width: 100%;
+    border-left: none;
+    border-top: 2px solid #18d26e;
+    margin-top: 60px;
+  }
 `;
 
 export const ContainerText = styled.div`
-  text-align: center;
   position: relative;
-  top: 170px;
+  // border: 1px solid #18d26e;
+  background-color: #313131;
+  border-radius: 8px;
+  width: 50%;
+  height: 38px;
+  padding: 15px;
+  margin: 5px;
+  position: relative;
+  top: 45px;
+  display: flex;
+  flex-direction: row;
 
-  border-right: 2px solid #18d26e;
+  @media (max-width: 800px) {
+    width: 70%;
+    margin: 10px;
+  }
 `;
 
 export const Text = styled.span`
-  font-size: 22px;
-  font-family: "Kalam", cursive;
-  text-align: center;
+  font-size: 17px;
+  position: relative;
+  top: 5px;
+  font-family: "Poppins", sans-serif;
 `;
 
 //---------------------------- Form Styles;
 export const Formik_Container = styled.div`
   display: flex;
   justify-content: center;
-  width: 58%;
+  width: 48%;
+  position: relative;
+  top: -15px;
+
+  @media (max-width: 800px) {
+    width: 100%;
+    left: -15px;
+  }
 `;
 
 export const Container = styled.div`
@@ -45,33 +75,41 @@ export const Container = styled.div`
 
 export const Label_Form = styled.label`
   width: 100%;
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
   margin-top: -25px;
 `;
 
 export const Field_Form = styled.input`
   border: none;
-  width: 100%;
-  border-bottom: 1px solid #18d26e;
-  background-color: transparent;
+  width: 94%;
+  background-color: #313131;
   color: #fff;
   font-family: "Poppins", sans-serif;
   outline: none;
-  padding: 2px;
-  margin-top: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 `;
 
 export const Textarea = styled.textarea`
   border: none;
-  width: 100%;
-  border-bottom: 2px solid #18d26e;
+  width: 94%;
   background-color: transparent;
   color: #fff;
+  padding: 15px;
+  background-color: #313131;
   font-family: "Poppins", sans-serif;
   outline: none;
-  padding: 2px;
   margin-top: 15px;
+  border-radius: 8px;
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 `;
 
 export const Submit_Buttom = styled.button`
@@ -80,10 +118,13 @@ export const Submit_Buttom = styled.button`
   background-color: #10b35c;
   cursor: pointer;
   font-family: "Poppins", sans-serif;
-  border-radius: 5px;
+  border-radius: 8px;
   margin-top: 20px;
   font-size: 20px;
   padding: 5px;
 
   border: 2px solid #10b35c;
+  @media (max-width: 800px) {
+    width: 110%;
+  }
 `;

@@ -15,8 +15,8 @@ const Contacto = () => {
         </h1>
         <SubTitle>Dejame un mensaje</SubTitle>
       </div>
-      <Location />
       <Formulario />
+      <Location />
     </ContainerContact>
   );
 };

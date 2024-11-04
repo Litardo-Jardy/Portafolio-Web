@@ -26,7 +26,7 @@ const Formulario = () => {
         <Container>
           <Label_Form>Nombre</Label_Form>
           <Field_Form
-            name="name"
+            name="nombre"
             type="text"
             value={nombre}
             onChange={handleNombreChange}
